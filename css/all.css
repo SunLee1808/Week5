@@ -537,11 +537,6 @@ a {
   background-position: center center;
   position: relative;
 }
-@media (max-width: 768px) {
-  .checkout {
-    margin-bottom: 0;
-  }
-}
 .checkout .material-icons.md-20 {
   font-size: 20px;
 }
