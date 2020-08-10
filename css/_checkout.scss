@@ -6,9 +6,6 @@
 	background-size: cover;
 	background-position: center center;
     position: relative;
-    @include mediumDevice(){
-        margin-bottom: 0;
-    }
 	.material-icons.md-20 { 
 		font-size: $font-m; 
 	}
