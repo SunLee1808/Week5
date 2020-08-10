@@ -1,0 +1,165 @@
+/**首頁**/
+/* Banner */
+.banner img{
+	margin-bottom: 60px;
+	@include mediumDevice(){
+		margin-bottom: 0;
+	}
+}
+
+/* Main */
+.main{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/* Menu */
+.menu{
+	width: 30%;
+	font-size: $font-l;
+	text-align: center;
+	@include mediumDevice(){
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	h3{
+		background: $primary;
+		color: $primary-light;
+		padding: 16px 0;
+	}
+	.all{
+		background: $primary-light;
+	}
+	li{
+		border: 1px solid $primary-light;
+	}
+	a{
+		display: block;
+		padding: 16px 0;
+		&:hover{
+			background: $primary;
+			color: $primary-light;
+			opacity: 0.5;
+		}
+	}
+}
+
+/* Product */
+.product{
+	width: 66%;
+	@include mediumDevice(){
+		width: 100%;
+		padding: 0 20px;
+	}
+	ul{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include smallDevice(){
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	li{
+		width: 48%;
+		position: relative;
+		margin-bottom: 20px;
+		@include mediumDevice(){
+			width: 46%;
+			margin-bottom: 30px;
+		}
+		@include smallDevice(){
+			width: 85%;
+		}
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.sale{
+	background: $primary;
+	color: $primary-light;
+	writing-mode: vertical-lr;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	padding: 10px;
+}
+
+.favorite{
+	background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true") no-repeat;
+	width: 20px;
+    height: 20px;
+	position: absolute;
+	top: 19px;
+	right: 22px;
+}
+.name_price{
+	font-size: $font-m;
+	font-weight: normal;
+	border-left: 1px solid $primary-light;
+	border-right: 1px solid $primary-light;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	h3{
+		width: 60%;
+		padding: 14px 0px;
+		border-right: 1px solid $primary-light;
+	}
+	p{
+		width: 40%;
+	}	
+}
+.shopping{
+	background: $primary-light;
+	display: block;
+	font-size: $font-l;
+	text-align: center;
+	padding: 16px 0;
+	&:hover{
+		background: $primary;
+		color: $primary-light;
+	}
+}
+
+/* Button */
+.button{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 60px;
+	@include mediumDevice(){
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	img{
+		border: 1px solid $primary-light;
+		padding: 16px;
+	}
+}
+
+.page{
+	display: block;
+	font-size: $font-m;
+	line-height: 26px;
+	padding: 15px 24px;
+}
+.page1{
+	color: $primary-light;
+	background: $primary;
+	border: 1px solid $primary;
+}
+.page2,.page3{
+	border-top: 1px solid $primary-light;
+	border-bottom: 1px solid $primary-light;
+	&:hover{
+		border: 1px solid $primary;
+	}
+}
+.page2{
+	border-right: 1px solid $primary-light;
+}
+

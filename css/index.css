@@ -1,0 +1,227 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  color: #3F5D45;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #3F5D45;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner img {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .banner img {
+    margin-bottom: 0;
+  }
+}
+/* Main */
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Menu */
+.menu {
+  width: 30%;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.menu h3 {
+  background: #3F5D45;
+  color: #EAF0ED;
+  padding: 16px 0;
+}
+
+.menu .all {
+  background: #EAF0ED;
+}
+
+.menu a {
+  display: block;
+  padding: 16px 0;
+}
+
+.menu li {
+  border: 1px solid #EAF0ED;
+}
+
+.menu a:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+  opacity: 0.5;
+}
+
+/* Product */
+.product {
+  width: 66%;
+}
+
+.product ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product li {
+  width: 48%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product li img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .product li {
+    width: 46%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .product ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product li {
+    width: 85%;
+  }
+}
+.product .sale {
+  background: #3F5D45;
+  color: #EAF0ED;
+  writing-mode: vertical-lr;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 10px;
+}
+
+.product .favorite {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true") no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+.product .name_price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.product h3 {
+  width: 60%;
+  padding: 14px 0px;
+  border-right: 1px solid #EAF0ED;
+}
+
+.product p {
+  width: 40%;
+}
+
+.product .shopping {
+  background: #EAF0ED;
+  display: block;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.product a:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+/* Button */
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .button {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+.button img {
+  border: 1px solid #EAF0ED;
+  padding: 16px;
+}
+
+.button .page {
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 24px;
+}
+
+.button .page1 {
+  color: #EAF0ED;
+  background: #3F5D45;
+  border: 1px solid #3F5D45;
+}
+
+.button .page2, .page3 {
+  border-top: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
+}
+
+.button .page2 {
+  border-right: 1px solid #EAF0ED;
+}
+
+.page2:hover {
+  border: 1px solid #3F5D45;
+}
+
+.page3:hover {
+  border: 1px solid #3F5D45;
+}

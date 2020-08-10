@@ -1,0 +1,231 @@
+/* Header */
+.header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    position: relative;
+    @include largeDevice(){
+        padding: 0 30px;
+    }
+    .drop-down-list{
+        display: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        @include mediumDevice(){
+            display: block;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .logo a{
+        display: block;
+	    width: 220px;
+        height: 40px;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg") no-repeat;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        @include mediumDevice(){
+            width: 115px;
+		    height: 18px;
+		    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg")
+        }
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    max-height: 0px; 
+    @include mediumDevice(){ 
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        background: white;
+        flex-direction: column;
+        z-index: 1;
+    }
+}
+.active{
+    max-height: 200px; 
+    margin-top: 10px;
+}
+
+.navbar-collapse{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    display: block;
+    padding: 0 30px;
+    @include mediumDevice(){
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+.navbar-link{
+    padding-left: 30px;
+    @include mediumDevice(){
+        padding-left: 0;
+    }
+}
+.nav-item{
+    &:hover{
+        background-color: #EAF0ED; 
+    }
+    @include mediumDevice(){
+        width: 100%;   
+    }
+}
+
+
+/* Email */
+.email{
+    background: $primary;
+    .subscribe {
+        max-width: 780px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include mediumDevice(){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .logo-light{
+        display: flex;
+        align-items: center;
+        @include mediumDevice(){
+            margin-top: 30px;
+        }
+        p{
+            color: $primary-light;
+            font-size: $font-l;
+            @include mediumDevice(){
+                margin: 0;
+            }
+        }
+        img{
+            width: 40px;
+            margin-right: 20px;
+        }
+    }
+    
+}
+.mail_form{
+    background: $primary-light;
+    display: flex;
+    margin: 30px 0;
+    input{
+        border: 0;
+        background: $primary-light;
+        font-size: $font-m;
+        &:focus{
+            outline:none;
+        }
+    }
+    img{
+        padding: 16px 20px ;
+    }
+    .btn{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true");
+        background-repeat: no-repeat;
+        background-color: $secondary;
+        background-position: center;
+        padding: 15px 30px;
+        cursor: pointer;
+        input{
+            background: $secondary;
+            padding: 0;
+        }
+    }
+}
+
+
+/* Footer */
+.footer{
+	background: $primary-light;
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
+
+.contact{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include largeDevice(){
+        padding: 0 20px;
+    }
+    @include smallDevice(){
+        flex-direction: column;
+        padding: 0 30px;
+    }
+}
+ 
+.method{ 
+    .logo-sm{
+        width: 170px;
+        margin-bottom: 120px;
+        @include smallDevice(){
+            margin-bottom: 40px;
+        }
+    }
+    .info{
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    .socialIcon{
+        width: 32px;
+        display: flex;
+        img{
+            padding-right: 8px;
+            @include smallDevice(){
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.phrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include smallDevice(){
+        align-items: flex-start;
+    }
+    .slogan{
+        font-size: $font-l;
+        writing-mode: vertical-rl;
+        letter-spacing: 7px;
+        line-height: 35px;
+        text-indent: -20px;
+        @include smallDevice(){
+            display: none;
+        }
+        span{
+            font-weight: lighter;
+            letter-spacing: 0;
+        }
+    }
+    .copyright{
+        font-size: $font-s;
+        line-height: 1;
+        @include mediumDevice(){
+            font-size: $font-xs;
+        }
+    }
+}
+
+
+
+
+
+
+
+

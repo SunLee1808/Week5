@@ -1,0 +1,180 @@
+/**發票寄送頁面**/
+.recepit{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    @include mediumDevice(){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+.sendInfo{
+    width: 58%;
+    height: 100%;
+    margin-right: 20px;
+    background: $primary;
+    color: $primary-light;
+    @include mediumDevice(){
+        width: 100%;
+        margin-right: 0;
+    }
+    a{
+        display: block;
+        width: 100%;
+        font-size: $font-l;
+        background: $secondary;
+        padding: 20px 0px;
+        text-align: center;
+        @include mediumDevice(){
+            width: 100%;
+        }
+    }
+}
+.data{
+        width: 380px;
+        margin: 0 40px;
+        @include mediumDevice(){
+            margin: 0 auto;
+        }
+        @include smallDevice(){
+            width: 300px;
+        }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+        
+        h2{
+            font-size: $font-xl;
+        }
+        .material-icons.md-20{ 
+            font-size: $font-m; 
+        }
+        hr{
+            display: inline-block;
+            width: 66px;
+            height: 1px;
+            border: 0;
+            background-color: $primary-light;
+        }
+        span{
+            width: 190px;
+        }
+    }
+    .option{
+        display: flex;
+        justify-content: center;
+        font-size: $font-m;
+        margin-bottom: 30px;
+        h3{
+            width: 50%;
+            padding: 14px 0;
+            text-align: center;
+            border: 1px solid $primary-light;
+            
+            &:nth-child(1){
+                color: $primary;
+                background-color: $primary-light;
+            }
+        }
+    }
+    .form{
+        font-size: $font-m;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin-bottom: 8px;
+        }
+        input{
+            background: $primary-light;
+            padding: 17px 200px 17px 20px;
+            border: 0;
+            @include smallDevice(){
+                padding-right: 100px;
+            }
+        }
+        .mail{
+            margin-bottom: 16px;
+        }
+        .taxID{
+            margin-bottom: 30px;
+        }
+    }
+}
+.summary{
+    width: 40%;  
+    color: #8DA291;
+    @include mediumDevice(){
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include smallDevice(){
+        display: none;
+    }
+}
+.order{
+    border: 1px solid $primary-light;
+    h2{
+        text-align: center;
+        font-size: $font-l;
+        padding: 16px 100px;
+        background: $primary-light;
+        margin-bottom: 16px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px 16px 20px;
+            &:nth-child(1){
+                font-weight: lighter;
+                margin-bottom: 8px;
+            }
+            &:nth-child(2){
+                font-weight: lighter;
+            }
+        }
+    }
+    .total{
+        font-size: $font-m;
+    }
+    
+}
+.shoppingList{
+    border: 1px solid $primary-light;
+    margin-bottom: 60px;
+    @include mediumDevice(){
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: $font-l;
+        text-align: center;
+        padding: 16px 100px;
+        background-color: $primary-light;
+        margin-bottom: 16px;
+    }
+    img{
+        width: 120px;
+        height: 80px;
+        margin-right: 20px;
+    }
+  
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        .name{
+            font-weight: lighter;
+            margin-bottom: 2px;
+        }
+        @include mediumDevice(){
+            margin-bottom: 10px;
+            justify-content: space-around;
+        }
+    }
+    
+}

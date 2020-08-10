@@ -1,0 +1,62 @@
+/**結帳頁面**/
+.checkout{
+	margin-bottom: 60px;
+	height: 460px;
+	background: url("../image/checkout.png") no-repeat;
+	background-size: cover;
+	background-position: center center;
+    position: relative;
+    @include mediumDevice(){
+        margin-bottom: 0;
+    }
+	.material-icons.md-20 { 
+		font-size: $font-m; 
+	}
+	hr{
+		display: inline-block;
+		width: 66px;
+		height: 1px;
+		border: 0;
+		background: $primary;
+	}
+	span{
+		width: 190px;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 145px;
+		margin: 0 auto;
+	}
+	.success{
+		width: 190px;
+		height: 50px;
+		background: url("../image/lg-付款成功.png") no-repeat;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+
+	}
+	.continue {
+		width: 300px;
+		font-size: $font-l;
+		padding: 16px 100px;
+		background: $secondary;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 110px;
+		margin: 0 auto;
+		@include smallDevice(){
+			width: 100%;
+			left: 0;
+			text-align: center;
+			bottom: -60px;
+		}
+	}
+}
+
+
+
